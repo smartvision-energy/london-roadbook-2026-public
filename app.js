@@ -9,7 +9,6 @@ const pageIds = [
   "fri-pm",
   "sat-options",
   "reservations",
-  "actions",
   "conseils"
 ];
 
@@ -70,14 +69,6 @@ document.querySelectorAll("[data-copy]").forEach((button) => {
     } catch {
       window.prompt("Reference a copier", text);
     }
-  });
-});
-
-document.querySelectorAll("[data-check]").forEach((input) => {
-  const key = `london-roadbook:${input.dataset.check}`;
-  input.checked = localStorage.getItem(key) === "1";
-  input.addEventListener("change", () => {
-    localStorage.setItem(key, input.checked ? "1" : "0");
   });
 });
 

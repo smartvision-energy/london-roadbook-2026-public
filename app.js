@@ -1,6 +1,7 @@
 const pageIds = [
   "home",
   "programme",
+  "restaurants",
   "wed-pm",
   "thu-am",
   "thu-pm",
